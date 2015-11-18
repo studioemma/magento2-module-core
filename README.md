@@ -45,3 +45,27 @@ $_helper = $this->helper('StudioEmma\Core\Helper\Store');
 echo $_helper->getLocale();
 ?>
 ```
+
+## Customer
+
+### isLoggedIn
+
+Checks if the customer is logged in
+
+```php
+<?php
+$_helper = $this->helper('StudioEmma\Core\Helper\Customer');
+$isLoggedIn = $_helper->isLoggedIn();
+?>
+```
+
+### getCurrentCustomer
+
+Returns the current customer if logged in. If not logged in, it will return false.
+
+```php
+<?php
+$_helper = $this->helper('StudioEmma\Core\Helper\Customer');
+$customer = $_helper->getCurrentCustomer();
+?>
+```
