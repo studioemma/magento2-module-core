@@ -1,4 +1,5 @@
-# StudioEmma_Core
+StudioEmma_Core
+===============
 
 ## General
 
@@ -10,9 +11,11 @@ The purpose of this module is to offer general functionality that is usefull for
 
 You can get the current category by using this code in the view template:
 
+```php
 <?php
 $_helper = $this->helper('StudioEmma\Core\Helper\Product');
 $currentCategory = $_helper->getCurrentCategory();
 
 echo $currentCategory->getName();
 ?>
+```
