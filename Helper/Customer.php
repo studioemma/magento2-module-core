@@ -36,7 +36,7 @@ class Customer extends \Magento\Framework\App\Helper\AbstractHelper
 
     /**
      * If logged in, will return the current customer object
-     * @return bool|\Magento\Customer\Api\Data\CustomerInterface
+     * @return null|\Magento\Customer\Api\Data\CustomerInterface
      */
     public function getCurrentCustomer()
     {
@@ -44,6 +44,16 @@ class Customer extends \Magento\Framework\App\Helper\AbstractHelper
             return $this->_currentCustomer->getCustomer();
         }
 
-        return false;
+        return null;
+    }
+
+    public function getCurrentCustomerGroup()
+    {
+        $currentCustomer = $this->getCurrentCustomer();
+        if (null !== $currentCustomer) {
+            return $currentCustomer->getGroupId();
+        }
+
+        return null;
     }
 }
