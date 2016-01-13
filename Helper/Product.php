@@ -124,4 +124,13 @@ class Product extends AbstractHelper
 
         return $url;
     }
+
+    /**
+     * Return the current product, if available
+     * @return \Magento\Catalog\Model\Product | null
+     */
+    public function getCurrentProduct()
+    {
+        return $this->_coreRegistry->registry('product');
+    }
 }

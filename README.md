@@ -22,6 +22,19 @@ echo $currentCategory->getName();
 ?>
 ```
 
+### getCurrentProduct
+
+You can get the current product by using this code in the view template:
+
+```php
+<?php
+$_helper = $this->helper('StudioEmma\Core\Helper\Product');
+$currentProduct = $_helper->getCurrentProduct();
+
+echo $currentProduct->getName();
+?>
+```
+
 ## Store
 
 ### getCurrentStore
