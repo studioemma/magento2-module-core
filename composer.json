@@ -4,8 +4,7 @@
     "type": "magento2-module",
     "version": "2.1.1",
     "license": [
-        "OSL-3.0",
-        "AFL-3.0"
+        "OSL-3.0"
     ],
     "require": {
         "php": "~5.6.0|~7.0.0",
