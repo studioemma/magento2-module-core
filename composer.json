@@ -2,7 +2,7 @@
     "name": "studioemma/magento2-module-core",
     "description": "Studio Emma Core module, with general functionality used in Magento 2 project",
     "type": "magento2-module",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "license": [
         "OSL-3.0",
         "AFL-3.0"
